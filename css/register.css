@@ -1,0 +1,87 @@
+/* General styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c3c3c3;
+    color: #333;
+    /* text-align: center; */
+    padding: 20px;
+    margin: 0;
+}
+
+/* Styling for the heading */
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+    margin-top: 13rem;
+    text-align: center;
+}
+
+/* Styling for the form */
+form {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: inline-block;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    margin-left: 45rem;
+}
+
+/* Styling for input fields */
+input[type="text"], input[type="password"], input[type="email"] {
+    width: calc(100% - 30px); /* Full width minus padding */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Styling for the password container */
+.password-container {
+    position: relative;
+    width: 100%;
+}
+
+/* Styling for the eye icon */
+.eye-icon {
+    position: absolute;
+    right: 10px;
+    top: 60%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+/* Styling for the submit button */
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-left: 10rem;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Styling for the registration link */
+p a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+p{
+    text-align: center;
+}
+
+p a:hover {
+    text-decoration: underline;
+}

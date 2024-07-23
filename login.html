@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Voter Login</title>
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+    <h2>Voter Login</h2>
+    <form action="login.php" method="POST">
+        Aadhar ID: <input type="text" name="aadhar_id" required><br>
+        <div class="password-container">
+            Password: <input type="password" id="password" name="password" required>
+            <img src="img/close_15632437.png" alt="Show/Hide Password" class="eye-icon" onclick="togglePassword()">
+        </div>
+        <input type="submit" value="Login">
+    </form>
+    <p>Not registered? <a href="register.html">Register here</a></p>
+
+    <script>
+        function togglePassword() {
+            var passwordField = document.getElementById('password');
+            var eyeIcon = document.querySelector('.eye-icon');
+            
+            if (passwordField.type === 'password') {
+                passwordField.type = 'text';
+                eyeIcon.src = 'img/eye_15632446.png'; // Replace with path to open eye icon
+            } else {
+                passwordField.type = 'password';
+                eyeIcon.src = 'img/close_15632437.png'; // Replace with path to closed eye icon
+            }
+        }
+    </script>
+</body>
+</html>
